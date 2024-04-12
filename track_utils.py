@@ -3,7 +3,7 @@ import pytz
 from datetime import datetime
 
 # Load Database Packages
-conn = sqlite3.connect('./data/data.db', check_same_thread=False)
+conn = sqlite3.connect('data.db', check_same_thread=False)
 c = conn.cursor()
 
 IST = pytz.timezone('Asia/Kolkata')  # Indian Standard Time
